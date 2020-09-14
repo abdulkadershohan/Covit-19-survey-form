@@ -1,0 +1,15 @@
+.questions{
+    text-align:center;
+}
+.questions h1{
+    color: brown;
+}
+.questions p{
+    color:grey;
+    font: 1em sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.questions Button{
+    margin: 5px;
+}
