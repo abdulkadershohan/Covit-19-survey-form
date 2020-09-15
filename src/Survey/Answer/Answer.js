@@ -1,32 +1,30 @@
-import React, { useState } from 'react';
-import  './Answer.css'
-
-
-const AnswerList =(props)=>{
-    let answerlist=Object.keys(props.answer)
-        .map((qAnswer,i)=>(
-            <li className={
-
-                props.correctAnswer === "1" ?
-                    'correct' :''
-
-
+import React from 'react';
+import './Answer.css'
+const Answer = (props) => {
+    let answers = Object.keys(props.answer)
+        .map((qAnswer, i) => (
+            <li
+            className=
+            {
+                props.correctAnswer === qAnswer ?
+                'correct' :
+                props.clickedAnswer === qAnswer ?
+                'incorrect' : ''
             }
-                onClick={() => props.checkAnswer(qAnswer)}
-                key={qAnswer}
-
-            >
+            onClick={() => props.checkAnswer(qAnswer)}
+            key={qAnswer}>
                 {props.answer[qAnswer]}
             </li>
-
         ));
-    return(
-        <div className={"AnswerList"}>
-           <ul>
-               {answerlist}
-           </ul>
-        </div>
-    );
+
+        return (
+            <>
+                <ul disabled={props.clickedAnswer ? true : false} className="Answers">
+                    {answers}
+                </ul>
+
+            </>
+        );
 }
 
-export  default AnswerList;
+export default Answer;

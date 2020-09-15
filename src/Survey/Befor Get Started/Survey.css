@@ -1,0 +1,16 @@
+.worning-message{
+    color: tomato;
+    text-align: center;
+   
+}
+.begin{
+   
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    color: #fbfcfd;
+    border-radius: 20px;
+    align-items:flex-end ;
+        
+}

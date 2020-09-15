@@ -2,14 +2,13 @@ import React from 'react';
 import './App.css';
 import Navbar from './Components/Navber/Navber';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Pages/Home';
+import Home from './Pages/Home Page/Home';
 import Stats from './Pages/Covit-19 Live Stats/Stats'
-import Survey from './Pages/Survey'
-import About from './Pages/About'
-import PageNotFOund from './Pages/PageNotFOund'
+import Survey from './Survey/Befor Get Started/Survey'
+import About from './Pages/About/About'
+import PageNotFOund from './Pages/Page Not Found/PageNotFOund'
 import './Components/Navber/Navber.css'
-import SurveyContent from './Pages/SurveyContent'
-
+import SurveyContent from "./Survey/Survey Content/SurveyContent";
 function App() {
   return (
     <>
