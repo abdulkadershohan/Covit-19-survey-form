@@ -1,0 +1,25 @@
+.AnswerList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.AnswerList li{
+    padding: 10px;
+    border-left: 4px solid #FF3B3B;
+    background-color: #bbb;
+    margin: 0 0 5px;
+}
+.AnswerList li:hover{
+    cursor: pointer;
+    background-color: #a2a2a2;
+}
+.AnswerList[disabled] {
+    pointer-events: none;
+    opacity: 0.7;
+}
+.AnswerList .correct,
+.AnswerList .correct:hover {
+    background-color: #1db900;
+    border-left: 4px solid #0f6300;
+    color: #fff;
+}
