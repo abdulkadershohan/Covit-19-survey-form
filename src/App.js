@@ -9,6 +9,7 @@ import About from './Pages/About/About'
 import PageNotFOund from './Pages/Page Not Found/PageNotFOund'
 import './Components/Navber/Navber.css'
 import SurveyContent from "./Survey/Survey Content/SurveyContent";
+import Support from "./Pages/Support/Support";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
           <Route exact path='/survey' component={Survey} />
           <Route exact path='/about' component={About} />
           <Route exact path='/survey/content' component={SurveyContent} />
+          <Route exact path='/support' component={Support}/>
           
           <Route component={PageNotFOund}/>
         </Switch>

@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Question from "../question/Question";
 import Answer from "../answer/Answer";
 import './SurveyContent.css'
+import Home from "../../Pages/Home Page/Home";
+
 export default class Quiz extends Component {
 
     // initiating the local state
@@ -96,7 +98,7 @@ export default class Quiz extends Component {
                 2: 'Disagreed'
             },
             15:{
-                1: 'Haven travelled anywhere in the last 14 days or come close to anyone with corona or fever, cough, shortness of breath',
+                1: 'Haven’t travelled anywhere in the last 14 days or come close to anyone with corona or fever, cough, shortness of breath',
                 2: 'In the last 14 days I have been in contact with someone who has a fever, cough, or shortness of breath (e.g. family member / colleague)'
 
             },
@@ -146,7 +148,8 @@ export default class Quiz extends Component {
         correctAnswer: 0,
         clickedAnswer: 0,
         step: 1,
-        score: 0
+        score: 0,
+        buttonName: 'Next'
     }
 
     // the method that checks the correct answer
@@ -164,6 +167,7 @@ export default class Quiz extends Component {
                 clickedAnswer: answer
             });
         }
+
     }
 
     // method to move to the next question
@@ -173,6 +177,19 @@ export default class Quiz extends Component {
             correctAnswer: 0,
             clickedAnswer: 0
         });
+        const {score,buttonName } = this.state;
+        if(score===4 || step===18 ){
+
+            this.setState({
+                buttonName: 'Finish',
+
+            })
+        }
+        if(buttonName==='Finish'){
+            this.setState({
+                step:20
+            })
+        }
     }
 
     render(){
@@ -196,13 +213,17 @@ export default class Quiz extends Component {
                             disabled={
                                 clickedAnswer && Object.keys(quiestions).length >= step ? false : true
                             }
-                            onClick={() => this.nextStep(step)}>Next</button>
+                            onClick={() => this.nextStep(step)}>{this.state.buttonName}</button>
                     </>) : (
                         <div className="finalPage">
-                            <h1>You have completed the quiz!</h1>
-                            <p>Your score is: {score} of {Object.keys(quiestions).length}</p>
+                            <h1>You have completed the Survey!</h1>
+                            <p>Your score is: {score}</p>
                             <p>Thank you!</p>
+
+
                         </div>
+
+
                     )
                 }
             </div>
