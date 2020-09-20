@@ -3,6 +3,7 @@ import logo2 from '../../images/logo2.png'
 import './Home.css'
 import Card from 'react-bootstrap/Card'
 import * as FiIcons from 'react-icons/fi';
+import UsefulVideos from "./YoutubeVideos/UsefulVideos";
 
 
 export default class Home extends Component {
@@ -17,6 +18,7 @@ export default class Home extends Component {
            color:"red",
            fontSize:"50px",
            fontWeight:"bold",
+             background:'purple'
           
            
          }}><FiIcons.FiPhoneCall/>  HOT LINE NUMBERS</Card.Header>
@@ -69,7 +71,7 @@ export default class Home extends Component {
             </div>
 
 
-
+            <UsefulVideos/>
 
 
             </>
