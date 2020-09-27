@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Survey.css'
 import Button from 'react-bootstrap/Button'
-import SurveyContent from '../Survey Content/SurveyContent'
 
 class Survey extends Component {
 

@@ -1,11 +1,7 @@
+
 .usful-number1{
-    background-color:whitesmoke;
+   
     color:red;
-  
- 
-  
-
-
 }
 .usful-number{
     color:red;
@@ -13,15 +9,15 @@
     list-style-type: none;
     justify-content: space-between;
     font-weight: bold;
+    font-size:x-large;
+    
    
-
 
 }
 .usful-number li{
     padding: 0 10px;
-    border-right: 1px solid #ddd;
-    flex: 0 0 auto;
     text-align: center;
+   
 
 
 

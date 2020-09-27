@@ -1,4 +1,4 @@
-import React, {Component,useEffect,useState} from 'react';
+import React, {useEffect,useState} from 'react';
 import Card from 'react-bootstrap/Card'
 import CardDeck from "react-bootstrap/CardDeck"
 import 'bootstrap/dist/css/bootstrap.min.css';

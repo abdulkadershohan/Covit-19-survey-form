@@ -1,12 +1,12 @@
-.useful-videos{
 
-}
 .useful-videos h1{
     color:whitesmoke;
     text-align: center;
     padding: 20px 10px;
     background-color: slateblue;
     border-radius: 10px;
+    font-weight: bold;
+   
 
 }
 .videos li{

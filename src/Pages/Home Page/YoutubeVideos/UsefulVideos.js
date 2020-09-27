@@ -2,8 +2,6 @@ import React from 'react';
 import ReactPlayer from "react-player";
 import './UsefulVideos.css'
 import * as BsIcons from 'react-icons/bs';
-import * as FaIcons from "react-icons/fa/index";
-import {Link} from "react-router-dom";
 
 function UsefulVideos () {
 
