@@ -1,16 +1,25 @@
-.worning-message{
+.warning-message{
     color: tomato;
     text-align: center;
+    font-size: 2rem;
    
 }
-.begin{
-   
-    padding: 10px 25px;
-    border: 1px solid #fff;
-    outline: none;
-    cursor: pointer;
-    color: #fbfcfd;
-    border-radius: 20px;
-    align-items:flex-end ;
-        
+.Button{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px){
+    .warning-message{
+        text-align: start;
+        font-size: 1.9rem;
+
+
+    }
+    .Button{
+        text-align: start;
+    }
+
+
+
 }

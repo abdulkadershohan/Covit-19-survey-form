@@ -32,3 +32,13 @@
     border-radius: 5px;
 
 }
+@media screen and (max-width: 960px){
+    .videos li{
+        width: 100%;
+        justify-content: center;
+
+
+
+    }
+
+}

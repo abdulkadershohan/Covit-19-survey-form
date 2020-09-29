@@ -1,24 +1,35 @@
 
-.usful-number1{
-   
-    color:red;
-}
-.usful-number{
-    color:red;
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
+.useful-number{
+    border-style: outset;
+    height: 8rem;
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size:x-large;
-    
-   
+    color: darkred;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(221,221,233,1) 35%, rgba(0,212,255,1) 89%);
+}
+.useful-number li{
+    padding: 10px;
+}
+.useful-numbers-container h2{
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    padding-top: 15px;
 
 }
-.usful-number li{
-    padding: 0 10px;
-    text-align: center;
-   
 
+@media screen and (max-width: 960px){
+    .useful-number{
+         display: list-item;
+        height: inherit;
+
+    }
 
 
 }
