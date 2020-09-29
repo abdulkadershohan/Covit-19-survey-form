@@ -3,7 +3,6 @@ import { MenuItems } from "./MenuItems"
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 
-
 class Navbar extends Component {
     state = { clicked: false }
 
@@ -14,7 +13,9 @@ class Navbar extends Component {
     render() {
         return(
             <nav className="NavbarItems">
-              <h1 className="navbar-logo"> COVIT-19 SURVEY FORM <i className="fab fa-react"></i></h1>
+             <div className="btn btn-outline-success">
+                 <Link to={"/"} className="navbar-logo text-decoration-none"> COVIT-19 SURVEY FORM <i className="fab fa-react"></i></Link>
+             </div>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
